@@ -44,7 +44,7 @@ class _SplashViewState extends State<SplashView> {
                 padding: EdgeInsets.symmetric(vertical: AppPadding.p50),
                 child: Image(
                     width: AppSize.s300,
-                    height: AppSize.s200,
+                    height: AppSize.s300,
                     image: AssetImage(ImageAssets.splashImage)),
               ),
               Text(StringsManager.splashBody,

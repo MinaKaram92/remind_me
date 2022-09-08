@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple_todo_app/src/core/resources/values_manager.dart';
-import 'package:simple_todo_app/src/features/onboarding_screen/models/onboarding_model.dart';
+
+import '../../models/onboarding_model.dart';
 
 class OnboardingWidget extends StatelessWidget {
   final OnboardingModel model;

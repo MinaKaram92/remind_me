@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:simple_todo_app/src/core/app_cubit/app_cubit.dart';
 import 'package:simple_todo_app/src/core/resources/strings_manager.dart';
 import 'package:simple_todo_app/src/core/resources/values_manager.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -23,7 +22,7 @@ class OnboardingScreen extends StatelessWidget {
           OnboardingCubit cubit = OnboardingCubit.get(context);
           return SafeArea(
             child: Container(
-              color: AppCubit.get(context).isDark ? Colors.black : Colors.white,
+              color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.all(AppPadding.p20),
                 child: Column(
@@ -75,9 +74,7 @@ class OnboardingScreen extends StatelessWidget {
                             effect: ExpandingDotsEffect(
                               expansionFactor: cubit.expansionFactor,
                               activeDotColor: Colors.teal,
-                              dotColor: AppCubit.get(context).isDark
-                                  ? Colors.white
-                                  : Colors.black,
+                              dotColor: Colors.black,
                               spacing: AppSize.s10,
                             ),
                           ),

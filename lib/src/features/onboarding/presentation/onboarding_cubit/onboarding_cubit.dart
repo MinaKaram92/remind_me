@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_todo_app/src/config/routes/route_manager.dart';
 import 'package:simple_todo_app/src/core/resources/assets_manager.dart';
-import 'package:simple_todo_app/src/features/onboarding_screen/models/onboarding_model.dart';
-import 'package:simple_todo_app/src/features/onboarding_screen/presentation/onboarding_cubit/onboarding_states.dart';
+import 'package:simple_todo_app/src/features/onboarding/presentation/onboarding_cubit/onboarding_states.dart';
 import '../../../../core/helpers/local/cache_helper.dart';
+import '../../models/onboarding_model.dart';
 
 class OnboardingCubit extends Cubit<OnboardingStates> {
   OnboardingCubit() : super(InitialOnboardingState());

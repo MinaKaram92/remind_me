@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:simple_todo_app/src/features/onboarding_screen/presentation/pages/onboarding_screen.dart';
-import 'package:simple_todo_app/src/features/splash_screen/splash_view.dart';
 import 'package:simple_todo_app/src/features/tasks/presentation/layout/remind_me_layout.dart';
 import 'package:simple_todo_app/src/features/tasks/presentation/pages/insert_task_screen.dart';
+
+import '../../features/onboarding/presentation/pages/onboarding_screen.dart';
+import '../../features/splash/splash_view.dart';
 
 class Routes {
   static const String splashRoute = '/';
